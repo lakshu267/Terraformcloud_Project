@@ -12,7 +12,7 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
-resource "aws_vpc" "myvpc" {
+resourc "aws_vpc" "myvpc" {
   cidr_block       = "10.0.0.0/16"
   instance_tenancy = "default"
 
@@ -26,7 +26,7 @@ resource "aws_subnet" "pubsub" {
   cidr_block = "10.0.1.0/24"
   availability_zone = "ap-southeast-2a"
 
-  tags = {
+tags = {
     Name = "PUBLICSUBNET"
   }
 }

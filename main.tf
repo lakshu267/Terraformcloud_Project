@@ -12,7 +12,7 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
-resourc "aws_vpc" "myvpc" {
+resource "aws_vpc" "myvpc" {
   cidr_block       = "10.0.0.0/16"
   instance_tenancy = "default"
 
@@ -37,7 +37,7 @@ resource "aws_subnet" "prisub" {
   availability_zone = "ap-southeast-2b"
 
   tags = {
-    Name = "PRIVATESUBNET"
+    Name = "PRIVATESUBNET-SYDNEY"
   }
 }
 

@@ -27,7 +27,7 @@ resource "aws_subnet" "pubsub" {
   availability_zone = "ap-southeast-2a"
 
 tags = {
-    Name = "HDFCPUBLICSUBNET"
+    Name = "HDFCPUBLICSUBNET-SYDNEY"
   }
 }
 
@@ -46,7 +46,7 @@ resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.myvpc.id
 
   tags = {
-    Name = "INTERGNETGATEWAY"
+    Name = "INTERGNETGATEWAY-SYDNEY"
   }
 }
 
